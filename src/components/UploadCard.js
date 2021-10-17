@@ -10,7 +10,7 @@ const UploadCard = ({
   setImageList,
   setImageUrl,
 }) => {
-  const serverUrl = "http://https://image-uploader-challange.herokuapp.com";
+  const serverUrl = "https://image-uploader-challange.herokuapp.com";
   const maxNumber = 1;
 
   const onChange = (imageList, addUpdateIndex) => {
