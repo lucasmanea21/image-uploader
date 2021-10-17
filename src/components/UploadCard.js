@@ -1,5 +1,5 @@
 import { Button, Card, CardContent, Typography } from "@material-ui/core";
-import React, { useState } from "react";
+import React from "react";
 import ImageUploading from "react-images-uploading";
 import { ImageIcon } from "../image.js";
 import axios from "axios";
@@ -10,7 +10,6 @@ const UploadCard = ({
   setImageList,
   setImageUrl,
 }) => {
-  const [images, setImages] = useState([]);
   const serverUrl = "http://https://image-uploader-challange.herokuapp.com";
   const maxNumber = 1;
 
@@ -39,7 +38,6 @@ const UploadCard = ({
   return (
     <ImageUploading
       multiple
-      value={images}
       onChange={onChange}
       maxNumber={maxNumber}
       dataURLKey="data_url"

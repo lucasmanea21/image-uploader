@@ -52,9 +52,9 @@ function App() {
           </Card>
         )}
       </Box>
-      <footer style={{ display: "flex" }}>
+      <footer style={{ display: "flex", justifyContent: "center" }}>
         <Typography
-          variant="body3"
+          variant="body2"
           style={{ alignItems: "center", display: "flex" }}
         >
           Built with{" "}
@@ -67,7 +67,7 @@ function App() {
           href="https://github.com/lucasmanea21"
           style={{ textDecoration: "none", color: "#ff1717", margin: "0 5px" }}
         >
-          Lucas Manea
+          <Typography variant="body2">Lucas Manea</Typography>
         </a>
       </footer>
     </>
